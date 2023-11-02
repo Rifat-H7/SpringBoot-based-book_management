@@ -21,13 +21,12 @@ public class Book {
     @Size(min = 3, message = "minimum 3 character needed")
     private String name;
 
-    @ManyToMany
+   /* @ManyToMany
     @JoinTable(
             name = "user_collection",
             joinColumns = {@JoinColumn(name = "book_id")},
             inverseJoinColumns = { @JoinColumn(name = "user_id")}
     )
-    private List<Users> musers;
-
+    private List<Users> musers;*/
 
 }
