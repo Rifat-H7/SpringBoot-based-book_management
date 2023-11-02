@@ -9,7 +9,7 @@ Technologies used:
 Features:
 1. Role based authentication
 2. Partial Global exception handler with validation
-3. Add book into collection
+
 
 How to use:
 1. clone this repo and open pom.xml
