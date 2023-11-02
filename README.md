@@ -3,10 +3,13 @@
 Technologies used:
 1. Spring Boot
 2. Spring Security
-3. JWT role based authentication
+3. JWT 
 4. H2 (in memory database)
-5. Partial Global exception handler with validation
-6. Add book into collection
+
+Features:
+1. Role based authentication
+2. Partial Global exception handler with validation
+3. Add book into collection
 
 How to use:
 1. clone this repo and open pom.xml
@@ -17,6 +20,7 @@ Postman api testing:
      method: post 
 
      url: http://localhost:8080/users/register
+
      body: {
           "username": string
           "password": string
@@ -29,6 +33,7 @@ Postman api testing:
      method: post
 
      url: http://localhost:8080/users/authenticate
+
      body:  {
           "username": string
           "password": string
@@ -45,6 +50,7 @@ Postman api testing:
      method: post
 
      url: http://localhost:8080/books/add
+
      body: {
           "name": string
      }
@@ -63,5 +69,6 @@ Postman api testing:
      method: delete
 
      url: http://localhost:8080/books/delete
+     
      parameter: id: int
 
